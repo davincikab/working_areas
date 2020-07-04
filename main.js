@@ -29,7 +29,7 @@ map.on('load', function(e){
                 '#CCD0D6',
                 '#CCD0D6'
             ],
-            'fill-opacity':0.8,
+            'fill-opacity':1,
             'fill-outline-color':'#fff',
         }
     });
