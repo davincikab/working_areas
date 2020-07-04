@@ -1,0 +1,136 @@
+:root {
+  --brand-color:rgb(8, 8, 131);
+  --white:#fff;
+  --link-color:#104aab;
+  --link-hover:#5c91ec;
+  --title-color:#2D4B7F;
+  --black:#222;
+}
+body {
+    margin: 0;
+}
+#map {
+    width:100vw;
+    height:80vh;
+}
+
+.description {
+    display: none;
+}
+
+/* style the popup */
+/* Popup styling */
+.mapboxgl-popup {
+    padding-bottom: 5px;
+  }
+
+  .mapboxgl-popup-close-button {
+    font-size: 1.2em;
+    background-color: var(--link-color);
+    color:var(--white);
+  }
+
+  .mapboxgl-popup-close-button:hover {
+    background-color: var(--brand-color);
+  }
+
+  .mapboxgl-popup-close-button:hover {
+    background-color: var(--brand-color);
+    outline: none;
+  }
+
+  .mapboxgl-map .mapboxgl-popup-content {
+    font: 400 15px/22px 'Source Sans Pro', 'Helvetica Neue', Sans-serif;
+    padding: 0;
+    width: 250px;
+  }
+
+  .mapboxgl-popup-content h1 {
+    font-size: 0.95rem;
+    box-shadow: 0px 1px 0.1em #dddddd;
+    margin-top: 0.5em;
+    padding-left: 1em;
+    color: var(--title-color);
+    font-weight: 600;
+    padding-bottom: 0.3em;
+    display: flex;
+  }
+
+  .mapboxgl-popup-content h1 > img {
+    border-radius: 50%;
+    margin-right: 1em;
+  }
+
+  .mapboxgl-popup-content h3 {
+    font-size: 1.1rem;
+  }
+
+
+  .mapboxgl-popup-content-wrapper {
+    padding: 1%;
+  }
+
+  .mapboxgl-popup-content h3 {
+    background: rgb(61, 59, 59);
+    text-align: center;
+    color: #fff;
+    margin: 0;
+    display: block;
+    padding: 15px;
+    font-weight: 700;
+    margin-top: -5px;
+  }
+
+  .mapboxgl-popup-content h4 {
+    margin: 0;
+    display: block;
+    padding: 10px 3px 10px 10px;
+    font-weight: 400;
+  }
+
+  .mapboxgl-container {
+    cursor: pointer;
+  }
+
+ 
+  .mapboxgl-popup-anchor-top>.mapboxgl-popup-tip {
+    border-bottom-color: rgb(255, 255, 255);
+  }
+
+.drawing_description{
+    max-height: 180px;
+    overflow:auto;
+    padding: 0.2em 0.6em;
+    line-height: 1.5;
+    font-size: 0.8em;
+    font-family: "Gotham SSm A","Gotham SSm B",Helvetica,sans-serif !important;
+    color:var(--black);
+}
+
+.drawing_description a {
+  text-decoration: none;
+  color:var(--link-color);
+}
+
+.drawing_description a:hover {
+  color:var(--link-hover);
+}
+
+
+.drawing_description b {
+  color: #2d2d2d;
+  font-size: 0.99em !important;
+}
+
+/* style the scrollbar */
+::-webkit-scrollbar{
+    width: 9px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: var(--link-color);
+    border-radius: 8px;
+}
+::-webkit-scrollbar-track{
+    background: #fff;
+}
